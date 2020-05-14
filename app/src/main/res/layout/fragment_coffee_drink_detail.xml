@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/grid_default_margin"
+        android:background="@color/cardItemBackground"
+        android:paddingStart="@dimen/default_horizontal_margin"
+        android:paddingEnd="@dimen/default_horizontal_margin"
+        app:cardBackgroundColor="@color/cardItemBackground"
+        app:cardCornerRadius="@dimen/card_corner"
+        app:cardUseCompatPadding="true"
+        app:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCoffee"
+                android:layout_width="@dimen/coffee_image_size"
+                android:layout_height="@dimen/coffee_image_size"
+                android:src="@drawable/ic_placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCoffeeName"
+                style="@style/AppTheme.CoffeeTitle"
+                android:layout_width="@dimen/match_constraint"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCoffee"
+                tools:text="Double Espresso" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvCoffeeDescription"
+        style="@style/AppTheme.CoffeeDescription"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_horizontal_margin"
+        android:layout_marginTop="@dimen/default_vertical_margin"
+        android:layout_marginEnd="@dimen/default_horizontal_margin"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvHeader"
+        tools:text="The espresso, also known as a short black, is approximately one ounce of highly concentrated coffee. Although simple in appearance, it can be difficult to master." />
+
+    <TextView
+        android:id="@+id/tvCoffeeRatio"
+        style="@style/AppTheme.CoffeeItem"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"
+        android:gravity="center"
+        android:text="@string/ratio"
+        app:layout_constraintStart_toStartOf="@+id/tvCoffeeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoffeeDescription" />
+
+    <TextView
+        android:id="@+id/tvCoffeeRatioValue"
+        style="@style/AppTheme.CoffeeItemValue"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cup"
+        app:layout_constraintEnd_toEndOf="@+id/tvCoffeeDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvCoffeeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoffeeRatio" />
+
+    <TextView
+        android:id="@+id/tvCoffeeCup"
+        style="@style/AppTheme.CoffeeItem"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_vertical_margin"
+        android:gravity="center"
+        android:text="@string/cup"
+        app:layout_constraintStart_toStartOf="@+id/tvCoffeeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoffeeRatioValue" />
+
+    <TextView
+        android:id="@+id/tvCoffeeCupValue"
+        style="@style/AppTheme.CoffeeItemValue"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/tvCoffeeDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvCoffeeDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoffeeCup"
+        tools:text="2-4 oz. Espresso Cup" />
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/loading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

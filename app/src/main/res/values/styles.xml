@@ -1,11 +1,30 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/defaultBackground</item>
+        <item name="android:textColor">@color/defaultText</item>
     </style>
 
+    <style name="AppTheme.CoffeeTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/coffee_drink_name_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.CoffeeDescription" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/coffee_drink_description_text_size</item>
+    </style>
+
+    <style name="AppTheme.CoffeeItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.CoffeeItemValue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
 </resources>
