@@ -47,9 +47,11 @@ class CoffeeDrinkListFragment : BaseFragment<CoffeeDrinkViewModel>(true) {
                 is ViewState.Error -> {
                     val builder = AlertDialog.Builder(context)
                     builder.setMessage(viewState.error)
-                        .setPositiveButton(R.string.close
+                        .setPositiveButton(
+                            R.string.close
                         ) { dialog, _ ->
                             dialog.dismiss()
+                            requireActivity().finish()
                         }
                     builder.create().show()
                 }

@@ -1,4 +1,4 @@
-package me.ranieripieper.android.coffee.core
+package me.ranieripieper.android.coffee
 
 import org.junit.rules.TestRule
 import org.junit.runner.Description
@@ -15,9 +15,11 @@ class KoinTestRule : TestRule {
 
                 startKoin() { modules(courotinesModule) }
 
-                base.evaluate()
-
-                stopKoin()
+                try {
+                    base.evaluate()
+                } finally {
+                    stopKoin()
+                }
             }
         }
     }

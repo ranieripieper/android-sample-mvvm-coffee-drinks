@@ -1,4 +1,4 @@
-package me.ranieripieper.android.coffee.core
+package me.ranieripieper.android.coffee
 
 import kotlinx.coroutines.Dispatchers
 import me.ranieripieper.android.coffee.core.viewmodel.CoroutineContextProvider

@@ -1,24 +1,12 @@
-package me.ranieripieper.android.coffee.core
+package me.ranieripieper.android.coffee
 
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import me.ranieripieper.android.coffee.core.viewmodel.CoroutineContextProvider
-import org.junit.Rule
 import org.koin.dsl.module
 import org.mockito.ArgumentCaptor
-
-abstract class BaseUnitTest {
-
-    @get:Rule
-    val instantTaskExecutorRule = InstantTaskExecutorRule()
-
-    @get:Rule
-    val testCoroutineRule = TestCoroutineRule()
-
-    @get:Rule
-    val koinTestRule = KoinTestRule()
-}
 
 val courotinesModule = module {
     fun provideCoroutineContextProvider(): CoroutineContextProvider {
@@ -32,9 +20,19 @@ fun <T> T.toDeferred() = GlobalScope.async { this@toDeferred }
 
 object MockitoHelper {
 
-    /**
-     * Function for creating an argumentCaptor in kotlin.
-     */
     inline fun <reified T : Any> argumentCaptor(): ArgumentCaptor<T> =
         ArgumentCaptor.forClass(T::class.java)
+}
+
+class TestObserver<T> : Observer<T> {
+    val observedValues = mutableListOf<T?>()
+
+    override fun onChanged(value: T?) {
+        observedValues.add(value)
+    }
+}
+
+fun <T> LiveData<T>.testObserver() = TestObserver<T>()
+    .also {
+    observeForever(it)
 }

@@ -1,4 +1,4 @@
-package me.ranieripieper.android.coffee.core
+package me.ranieripieper.android.coffee
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.test.*

@@ -1,8 +1,8 @@
 package me.ranieripieper.android.coffee.feature.drinks.repository
 
-import me.ranieripieper.android.coffee.core.BaseUnitTest
+import me.ranieripieper.android.coffee.BaseUnitTest
 import me.ranieripieper.android.coffee.core.service.ServiceResult
-import me.ranieripieper.android.coffee.core.toDeferred
+import me.ranieripieper.android.coffee.toDeferred
 import me.ranieripieper.android.coffee.feature.drinks.data.CoffeeDrink
 import me.ranieripieper.android.coffee.feature.drinks.network.CoffeeDrinkApi
 import org.hamcrest.CoreMatchers

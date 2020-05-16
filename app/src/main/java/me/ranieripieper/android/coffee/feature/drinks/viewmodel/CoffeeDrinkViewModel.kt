@@ -18,21 +18,12 @@ class CoffeeDrinkViewModel(
     private val resourceManager: ResourceManager
 ) : BaseViewModel() {
 
-    private val _coffeeDrinkList = MutableLiveData<List<CoffeeDrink>>()
     private val _coffeeDrinkDetail = MutableLiveData<CoffeeDrink>()
     private val _viewStateDetail = MutableLiveData<ViewState>()
     private val _viewState = MutableLiveData<ViewState>()
+    private val _coffeeDrinkList: MutableLiveData<List<CoffeeDrink>> by lazy {
+        val liveData = MutableLiveData<List<CoffeeDrink>>()
 
-    val coffeeDrinkList: LiveData<List<CoffeeDrink>> = _coffeeDrinkList
-    val coffeeDrinkDetail: LiveData<CoffeeDrink> = _coffeeDrinkDetail
-    val viewStateDetail: LiveData<ViewState> = _viewStateDetail
-    val viewState: LiveData<ViewState> = _viewState
-
-    init {
-        loadCoffeeDrinks()
-    }
-
-    fun loadCoffeeDrinks() {
         _viewState.value = ViewState.Loading(true)
 
         viewModelScope.launch {
@@ -44,14 +35,20 @@ class CoffeeDrinkViewModel(
 
             when (result) {
                 is ServiceResult.Success -> {
-                    _coffeeDrinkList.value = result.data
+                    liveData.value = result.data
                 }
                 is ServiceResult.Error -> {
                     _viewState.value = ViewState.Error(result.exception.message!!)
                 }
             }
         }
+        return@lazy liveData
     }
+
+    val coffeeDrinkList: LiveData<List<CoffeeDrink>> = _coffeeDrinkList
+    val coffeeDrinkDetail: LiveData<CoffeeDrink> = _coffeeDrinkDetail
+    val viewStateDetail: LiveData<ViewState> = _viewStateDetail
+    val viewState: LiveData<ViewState> = _viewState
 
     fun fetchCoffeeDrink(id: Long) {
         _viewStateDetail.value = ViewState.Loading(true)
