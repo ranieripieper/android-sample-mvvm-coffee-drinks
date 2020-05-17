@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface CoffeeDrinkApi {
 
-    @GET("ranieripieper/android-sample-coffee-mvvm/master/sample_api_coffee.json")
+    @GET("ranieripieper/android-sample-mvvm-coffee-drinks/master/sample_api_coffee.json")
     fun getCoofeeDrinks(
     ): Deferred<List<CoffeeDrink>>
 }
