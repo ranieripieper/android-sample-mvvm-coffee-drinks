@@ -22,8 +22,9 @@
 
         <ImageView
             android:id="@+id/ivCoffee"
-            android:layout_width="@dimen/coffee_image_size"
-            android:layout_height="@dimen/coffee_image_size"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:src="@drawable/ic_placeholder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

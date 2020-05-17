@@ -27,7 +27,7 @@ android {
     }
 
     applicationVariants.all { variant ->
-        buildConfigField "String", "API_URL", "\"http://10.0.2.2:3000/\""
+        buildConfigField "String", "API_URL", "\"https://raw.githubusercontent.com/\""
     }
 
     compileOptions {
