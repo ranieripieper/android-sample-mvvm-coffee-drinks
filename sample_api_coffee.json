@@ -1,7 +1,7 @@
 [{
 	"id": 1,
 	"name": "Espresso",
-	"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-1.jpg",
+	"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-1.jpg",
 	"description": "The espresso, also known as a short black, is approximately one ounce of highly concentrated coffee. Although simple in appearance, it can be difficult to master.",
 	"ratio": "1 shot of espresso",
 	"cup": "2-4 oz. Espresso Cup"
@@ -9,7 +9,7 @@
 	{
 		"id": 2,
 		"name": "Double Espresso",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-2.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-2.jpg",
 		"description": "A double espresso may also be listed as doppio, which is the Italian word for double. This drink is highly concentrated and strong.",
 		"ratio": "2 shots of espresso",
 		"cup": "3-4 oz. Demitasse Cup"
@@ -17,7 +17,7 @@
 	{
 		"id": 3,
 		"name": "Red Eye",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-3.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-3.jpg",
 		"description": "The red eye's purpose is to add a boost of caffeine to your standard cup of coffee.",
 		"ratio": "1 shot of espresso + 6 oz. of drip brewed coffee",
 		"cup": "8 oz. Coffee Mug"
@@ -25,7 +25,7 @@
 	{
 		"id": 4,
 		"name": "Black Eye",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-4.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-4.jpg",
 		"description": "The black eye is just the doubled version of the red eye and is very high in caffeine.",
 		"ratio": "2 shots of espresso + 6 oz. of drip brewed coffee",
 		"cup": "8-10 oz. Coffee Mug"
@@ -33,7 +33,7 @@
 	{
 		"id": 5,
 		"name": "Americano",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-1.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-1.jpg",
 		"description": "Americanos are popular breakfast drinks and thought to have originated during World War II. Soldiers would add water to their coffee to extend their rations farther. The water dilutes the espresso while still maintaining a high level of caffeine.",
 		"ratio": "1 shot of espresso + 3 oz. of hot water",
 		"cup": "5-6 oz. Glass Coffee Mug"
@@ -41,7 +41,7 @@
 	{
 		"id": 6,
 		"name": "Long Black",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-2.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-2.jpg",
 		"description": "The long black is a similar coffee drink to the americano, but it originated in New Zealand and Australia. It generally has more crema than an americano.",
 		"ratio": "2 shots of espresso + 3 oz. of hot water",
 		"cup": "6-8 oz. Glass Coffee Mug"
@@ -49,7 +49,7 @@
 	{
 		"id": 7,
 		"name": "Macchiato",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-3.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-3.jpg",
 		"description": "The word “macchiato” means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink. Flavoring syrups are often added to the drink according to customer preference.",
 		"ratio": "1 shot of espresso + 1 to 2 teaspoons of steamed milk",
 		"cup": "3 oz. Glass Espresso Cup"
@@ -57,7 +57,7 @@
 	{
 		"id": 8,
 		"name": "Long Macchiato",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-4.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-4.jpg",
 		"description": "Often confused with a standard macchiato, the long macchiato is a taller version and will usually be identifiable by its distinct layers of coffee and steamed milk.",
 		"ratio": "2 shots of espresso + 2 to 4 teaspoons of steamed milk",
 		"cup": "5 oz. Rocks Glass"
@@ -65,7 +65,7 @@
 	{
 		"id": 9,
 		"name": "Cortado",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-1.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-1.jpg",
 		"description": "The cortado takes the macchiato one step further by evenly balancing the espresso with warm milk in order to reduce the acidity.",
 		"ratio": "1 shot of espresso + 1 ounce of warm milk + 1 cm of foam",
 		"cup": "5 oz. Rocks Glass"
@@ -73,7 +73,7 @@
 	{
 		"id": 10,
 		"name": "Breve",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-2.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-2.jpg",
 		"description": "The breve provides a decadent twist on the average espresso adding steamed half-and-half to create a rich and creamy texture.",
 		"ratio": "1 shot of espresso + 3 oz. of steamed half-and-half + 1 cm of foam",
 		"cup": "5-7 oz. Low Cup"
@@ -81,7 +81,7 @@
 	{
 		"id": 11,
 		"name": "Cappuccino",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-3.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-3.jpg",
 		"description": "This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in the United States as well. It is usually associated with indulgence and comfort due to its thick foam layer and additional flavorings that can be added to it.",
 		"ratio": "1-2 shots of espresso + 2 oz. of steamed milk + 2 oz. of foamed milk + sprinkling of chocolate powder (optional)",
 		"cup": "6-8 oz. Cappuccino Mug"
@@ -89,7 +89,7 @@
 	{
 		"id": 12,
 		"name": "Flat White",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-4.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-4.jpg",
 		"description": "A flat white also originates from New Zealand and Australia and is very similar to a cappuccino but lacks the foam layer and chocolate powder. To keep the drink creamy rather than frothy, steamed milk from the bottom of the jug is used instead of from the top.",
 		"ratio": "1 shot of espresso + 4 oz. of steamed milk",
 		"cup": "6 oz. Glass Tumbler"
@@ -97,7 +97,7 @@
 	{
 		"id": 13,
 		"name": "Cafe Latte",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-1.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-1.jpg",
 		"description": "Cafe lattes are considered to be an introductory coffee drink since the acidity and bitterness of coffee is cut by the amount of milk in the beverage. Flavoring syrups are often added to the latte for those who enjoy sweeter drinks.",
 		"ratio": "1 shot of espresso + 8-10 oz. of steamed milk + 1 cm of foam",
 		"cup": "14 oz. Mixing Glass"
@@ -105,7 +105,7 @@
 	{
 		"id": 14,
 		"name": "Mocha",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-2.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-2.jpg",
 		"description": "The mocha is considered to be like a coffee and hot chocolate hybrid. The chocolate powder or syrup gives it a rich and creamy flavor and cuts the acidity of the espresso.",
 		"ratio": "1 shot of espresso + 1-2 oz. of chocolate syrup/powder + 1-3 oz. of steamed milk + 2-3 cm of foam or whipped cream",
 		"cup": "6-8 oz Irish Coffee Mug"
@@ -113,7 +113,7 @@
 	{
 		"id": 15,
 		"name": "Vienna",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-3.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-3.jpg",
 		"description": "There are a few variations on the vienna, but one of the most common is made with two ingredients: espresso and whipped cream. The whipped cream takes the place of milk and sugar to provide a creamy texture.",
 		"ratio": "1-2 shots of espresso + 2 oz. of whipped cream",
 		"cup": "4-5 oz. Espresso Mug"
@@ -121,7 +121,7 @@
 	{
 		"id": 16,
 		"name": "Affogato",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-4.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-4.jpg",
 		"description": "Affogatos are more for a dessert coffee than a drink you would find at a cafe, but they can add a fun twist to your menu. They are made by pouring a shot of espresso over a scoop of vanilla ice cream to create a sweet after-meal treat.",
 		"ratio": "1-2 shots of espresso + 1 scoop of vanilla ice cream",
 		"cup": "5-7 oz. Dessert Dish"
@@ -129,7 +129,7 @@
 	{
 		"id": 17,
 		"name": "Cafe au Lait",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-1.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-1.jpg",
 		"description": "The cafe au lait is typically made with french press coffee instead of an espresso shot to bring out the different flavors in the coffee. It is then paired with scalded milk instead of steamed milk and poured at a 50/50 ratio.",
 		"ratio": "5 oz. french press coffee + 5 oz. scalded milk",
 		"cup": "12 oz. Coffee Mug"
@@ -137,7 +137,7 @@
 	{
 		"id": 18,
 		"name": "Iced Coffee",
-		"image": "https://github.com/ranieripieper/android-sample-mvvm-coffee-drinks/blob/master/images/coffee-image-2.jpg",
+		"image": "https://raw.githubusercontent.com/ranieripieper/android-sample-mvvm-coffee-drinks/master/images/coffee-image-2.jpg",
 		"description": "Iced coffees become very popular in the summer time in the United States. The recipes do have some variance, with some locations choosing to interchange milk with water in the recipe. Often, different flavoring syrups will be added per the preference of the customer.",
 		"ratio": "2 oz. drip coffee or espresso + 4 oz. of ice + 4-6 oz of milk or water + flavoring syrup to taste",
 		"cup": "14 oz. Mixing Glass"
