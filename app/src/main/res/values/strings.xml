@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Coffee</string>
+    <string name="app_name">Coffee App</string>
+
+    <string name="coffee_list_title">Coffee Drinks</string>
+    <string name="coffee_drink_detail_title">Coffee Drink Detail</string>
+    <string name="ratio">Ratio</string>
+    <string name="cup">Cup</string>
+    <string name="close">Close</string>
+
+    <string name="error_coffee_drink_not_found">Coffee Detail not found!</string>
+
+    <string name="sample_mvvm_description">Android MVVM Architecture: Sample Coffee App</string>
+
 </resources>
