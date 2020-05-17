@@ -56,6 +56,7 @@ class CoffeeDrinkDetailFragment : BaseFragment<CoffeeDrinkViewModel>(true) {
                     .thumbnail()
                     .into(ivCoffee)
             }
+            tvCoffeeDescription.text = coffeeDrink.description
             tvCoffeeCupValue.text = coffeeDrink.cup
             tvCoffeeRatioValue.text = coffeeDrink.ratio
         })
